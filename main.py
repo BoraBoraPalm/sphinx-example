@@ -100,3 +100,13 @@ if __name__ == "__main__":
     Output().print("normal", "Successfully loaded the data", f"It took {8} sec.")
     Output().print("normal", "Successfully loaded the data", f"It took {300} sec.")
     Output().print("error", "Could not load file", "The file might not be available.")
+    """
+    The code above creates the console output:
+    [   1   ] [ 11:24 ] [     normal      ] >>> Message: ('Successfully loaded the data', 'It took 10 sec.')
+    [   2   ] [ 11:24 ] [     normal      ] >>> Message: ('Successfully loaded the data', 'It took 2 sec.')
+    [   3   ] [ 11:24 ] [     normal      ] >>> Message: ('Successfully loaded the data', 'It took 8 sec.')
+    [   4   ] [ 11:24 ] [     normal      ] >>> Message: ('Successfully loaded the data', 'It took 300 sec.')
+    and...
+    [   5   ] [ 11:24 ] [      error      ] >>> Message: ('Could not load file', 'The file might not be available.')
+    ...being not in order, because it is an error message.
+    """
