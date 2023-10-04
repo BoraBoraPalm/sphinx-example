@@ -6,12 +6,15 @@
 Sphinx documentation
 ==========================================
 
+This website just purposes to test the sphinx documentation ability.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    code
    sample-chapter
+   summary
 
 
 
