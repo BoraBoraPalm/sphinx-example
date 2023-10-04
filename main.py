@@ -1,6 +1,9 @@
 import sys
 import time
 from typeguard import typechecked
+#import typeguard import typechecked
+#from typeguard import install_import_hook
+#install_import_hook('main')
 
 
 class TestClass:
@@ -27,14 +30,11 @@ class TestClass:
     def test_method(self, a: str, b: int, c: float) -> int:
         """
         This method is just for testing purposes. Otherwise, it would be complete nonsense ;)
+
         :param a: insert a desired string.
-        :type a: str
         :param b: insert a desired integer.
-        :type b: int
         :param c: insert a desired floating number.
-        :type c: float
         :return: just 1!!
-        :rtype: str
         """
         print(f"This function returns just {1}", file=sys.stdout)
         return 1
@@ -65,10 +65,12 @@ class Output:
     @typechecked
     def print(type_of_message: str = "normal", *args):
         """
+        For printing the desired message formatted to the console.
+
         :param type_of_message: it can be either "normal" or "error" so far. The default is "normal".
         :type type_of_message: str
         :param args: Messages which the use would like to print to the console.
-        :return: noting
+        :return: nothing
         """
         Output.i += 1
 
