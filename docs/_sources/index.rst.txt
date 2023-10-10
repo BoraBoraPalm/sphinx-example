@@ -13,8 +13,13 @@ This website just purposes to test the sphinx documentation ability.
    :caption: Contents:
 
    code
+   example_graphviz
+   example_images
+   example_latex
+   example_plantuml
    sample-chapter
    summary
+
 
 
 
