@@ -1,0 +1,7 @@
+Callgraph example
+=================
+
+..callgraph:: pyan.main
+    :toctree: api
+    :zoomable:
+    :direction: horizontal

@@ -17,6 +17,14 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script>
+    window.addEventListener('load', () => {
+        Array.from(document.getElementsByClassName('zoomable-callgraph')).forEach(function(element) {
+            svgPanZoom(element);
+        });
+    })
+    </script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -93,7 +101,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="example_images.html">Sample chapter for images</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="example_images.html#sample-mri-image">Sample MRI Image</a></li>
-<li class="toctree-l2"><a class="reference internal" href="example_images.html#text-h-nmr-spectrum-of-ethylbenznene"><span class="math notranslate nohighlight">\(^1\text{H}\)</span> NMR spectrum of ethylbenznene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example_images.html#h-nmr-spectrum-of-ethylbenznene">1H NMR spectrum of ethylbenznene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example_images.html#sample-code2flow-image">Sample code2flow image</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="example_latex.html">Sample math chapter</a><ul>

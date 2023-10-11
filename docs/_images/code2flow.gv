@@ -1,0 +1,67 @@
+digraph G {
+concentrate=true;
+splines="ortho";
+rankdir="LR";
+subgraph legend{
+    rank = min;
+    label = "legend";
+    Legend [shape=none, margin=0, label = <
+        <table cellspacing="0" cellpadding="0" border="1"><tr><td>Code2flow Legend</td></tr><tr><td>
+        <table cellspacing="0">
+        <tr><td>Regular function</td><td width="50px" bgcolor='#cccccc'></td></tr>
+        <tr><td>Trunk function (nothing calls this)</td><td bgcolor='#966F33'></td></tr>
+        <tr><td>Leaf function (this calls nothing else)</td><td bgcolor='#6db33f'></td></tr>
+        <tr><td>Function call</td><td><font color='black'>&#8594;</font></td></tr>
+        </table></td></tr></table>
+        >];
+}node_ed33fe7e [label="0: (global)()" name="main::(global)" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_6f652498 [label="67: print()" name="main::Output.print" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_a27a57c8 [label="31: test_method()" name="main::TestClass.test_method" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_110dfa58 [label="20: call_main()" name="somemodule::SomeClass.call_main" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_34d2393b [label="16: iterator()" name="somemodule::SomeClass.iterator" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_dcb7cf8b [label="13: print_something()" name="somemodule::SomeClass.print_something" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_ed33fe7e -> node_6f652498 [color="#D55E00" penwidth="2"];
+node_ed33fe7e -> node_6f652498 [color="#D55E00" penwidth="2"];
+node_ed33fe7e -> node_6f652498 [color="#D55E00" penwidth="2"];
+node_ed33fe7e -> node_6f652498 [color="#D55E00" penwidth="2"];
+node_ed33fe7e -> node_6f652498 [color="#D55E00" penwidth="2"];
+node_ed33fe7e -> node_a27a57c8 [color="#D55E00" penwidth="2"];
+node_ed33fe7e -> node_110dfa58 [color="#D55E00" penwidth="2"];
+node_ed33fe7e -> node_34d2393b [color="#D55E00" penwidth="2"];
+node_ed33fe7e -> node_dcb7cf8b [color="#D55E00" penwidth="2"];
+node_110dfa58 -> node_6f652498 [color="#000000" penwidth="2"];
+subgraph cluster_d2a5e431 {
+    node_ed33fe7e;
+    label="File: main";
+    name="main";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_6454ce5b {
+        node_a27a57c8;
+        label="Class: TestClass";
+        name="TestClass";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_029c9495 {
+        node_6f652498;
+        label="Class: Output";
+        name="Output";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+subgraph cluster_ca2843dc {
+    label="File: somemodule";
+    name="somemodule";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_be92a07f {
+        node_dcb7cf8b node_34d2393b node_110dfa58;
+        label="Class: SomeClass";
+        name="SomeClass";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+}

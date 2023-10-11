@@ -17,6 +17,14 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script>
+    window.addEventListener('load', () => {
+        Array.from(document.getElementsByClassName('zoomable-callgraph')).forEach(function(element) {
+            svgPanZoom(element);
+        });
+    })
+    </script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -48,7 +56,7 @@
 <li class="toctree-l1"><a class="reference internal" href="example_graphviz.html">Sample graphviz chapter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_images.html">Sample chapter for images</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_latex.html">Sample math chapter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example_plantuml.html">Sample pantUML chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_plantuml.html">Sample plantUML chapter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sample-chapter.html">Sample chapter</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Summary</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#section-1">Section 1</a><ul>

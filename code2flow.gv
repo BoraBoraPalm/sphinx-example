@@ -1,0 +1,62 @@
+digraph G {
+concentrate=true;
+splines="ortho";
+rankdir="LR";
+subgraph legend{
+    rank = min;
+    label = "legend";
+    Legend [shape=none, margin=0, label = <
+        <table cellspacing="0" cellpadding="0" border="1"><tr><td>Code2flow Legend</td></tr><tr><td>
+        <table cellspacing="0">
+        <tr><td>Regular function</td><td width="50px" bgcolor='#cccccc'></td></tr>
+        <tr><td>Trunk function (nothing calls this)</td><td bgcolor='#966F33'></td></tr>
+        <tr><td>Leaf function (this calls nothing else)</td><td bgcolor='#6db33f'></td></tr>
+        <tr><td>Function call</td><td><font color='black'>&#8594;</font></td></tr>
+        </table></td></tr></table>
+        >];
+}node_27d071ea [label="0: (global)()" name="main::(global)" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_48133f16 [label="67: print()" name="main::Output.print" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_39e6256f [label="31: test_method()" name="main::TestClass.test_method" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_ae90152c [label="20: call_main()" name="somemodule::SomeClass.call_main" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_27d071ea -> node_48133f16 [color="#56B4E9" penwidth="2"];
+node_27d071ea -> node_48133f16 [color="#56B4E9" penwidth="2"];
+node_27d071ea -> node_48133f16 [color="#56B4E9" penwidth="2"];
+node_27d071ea -> node_48133f16 [color="#56B4E9" penwidth="2"];
+node_27d071ea -> node_48133f16 [color="#56B4E9" penwidth="2"];
+node_27d071ea -> node_39e6256f [color="#56B4E9" penwidth="2"];
+node_ae90152c -> node_48133f16 [color="#F0E442" penwidth="2"];
+subgraph cluster_1e79c06a {
+    node_27d071ea;
+    label="File: main";
+    name="main";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_362c704e {
+        node_39e6256f;
+        label="Class: TestClass";
+        name="TestClass";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_895c4479 {
+        node_48133f16;
+        label="Class: Output";
+        name="Output";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+subgraph cluster_a3f1ac38 {
+    label="File: somemodule";
+    name="somemodule";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_bdf49388 {
+        node_ae90152c;
+        label="Class: SomeClass";
+        name="SomeClass";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+}

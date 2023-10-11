@@ -1,6 +1,6 @@
 import sys
 import time
-import some_more_python_files.somemodule as somemodule
+import somemodule
 from typeguard import typechecked
 #import typeguard import typechecked
 #from typeguard import install_import_hook
