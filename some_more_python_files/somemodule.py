@@ -1,7 +1,13 @@
 import main
 
 class SomeClass:
+    """
+    This is just some class...
+    """
     def __init__(self):
+        """
+        The constructor. Not very special...
+        """
         pass
 
     def __call__(self, *args, **kwargs):
@@ -11,6 +17,10 @@ class SomeClass:
         pass
 
     def print_something(self):
+        """
+        This class just prints some random text!
+        :return:
+        """
         print("Some random txt")
 
     def iterator(self):

@@ -33,8 +33,7 @@ release = '0.0.1'
 extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.githubpages',
               'sphinx.ext.graphviz',
-              'sphinxcontrib.plantuml',
-              'pyan.sphinx']
+              'sphinxcontrib.plantuml'] # 'pyan.sphinx'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -71,5 +70,6 @@ plantuml_latex_output = True
 
 # Then include diagram in .. plantuml:: your_diagram.puml Replace your_diagram.puml with the path to the PlantUML diagram you generated.
 
+# NOT YET USED:
 # -- Graphviz options (for pyan.sphinx?) ---------------------------------------
-graphviz_output_format = "svg"
+#graphviz_output_format = "svg"
