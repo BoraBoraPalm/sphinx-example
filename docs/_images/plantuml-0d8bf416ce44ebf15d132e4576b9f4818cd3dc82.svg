@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="294px" preserveAspectRatio="none" style="width:320px;height:294px;" version="1.1" viewBox="0 0 320 294" width="320px" zoomAndPan="magnify"><defs><filter height="300%" id="frbi5zirod6ps" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9a39ccbd4d35b899d18dc162d69b1d63]
+class Particle--><rect fill="#FEFECE" filter="url(#frbi5zirod6ps)" height="99.2188" id="Particle" style="stroke: #A80036; stroke-width: 1.5;" width="126" x="110.44" y="8"/><ellipse cx="146.59" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M149.5588,29.6406 Q148.9806,29.9375 148.34,30.0781 Q147.6994,30.2344 146.9963,30.2344 Q144.4963,30.2344 143.1681,28.5938 Q141.8556,26.9375 141.8556,23.8125 Q141.8556,20.6875 143.1681,19.0313 Q144.4963,17.375 146.9963,17.375 Q147.6994,17.375 148.34,17.5313 Q148.9963,17.6875 149.5588,17.9844 L149.5588,20.7031 Q148.9338,20.125 148.34,19.8594 Q147.7463,19.5781 147.1213,19.5781 Q145.7775,19.5781 145.09,20.6563 Q144.4025,21.7188 144.4025,23.8125 Q144.4025,25.9063 145.09,26.9844 Q145.7775,28.0469 147.1213,28.0469 Q147.7463,28.0469 148.34,27.7813 Q148.9338,27.5 149.5588,26.9219 L149.5588,29.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="47" x="165.29" y="28.1543">Particle</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="111.44" x2="235.44" y1="40" y2="40"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="118.44" y="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65" x="130.44" y="54.2104">mass: float</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="118.44" y="60.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="130.44" y="67.0151">charge: float</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="111.44" x2="235.44" y1="73.6094" y2="73.6094"/><ellipse cx="121.44" cy="84.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="130.44" y="87.8198">getMass(): float</text><ellipse cx="121.44" cy="97.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="100" x="130.44" y="100.6245">getCharge(): float</text><!--MD5=[f18b0f967872e82ff276115ca1b4c569]
+class Atom--><rect fill="#FEFECE" filter="url(#frbi5zirod6ps)" height="99.2188" id="Atom" style="stroke: #A80036; stroke-width: 1.5;" width="157" x="94.94" y="184"/><ellipse cx="153.19" cy="200" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M156.1588,205.6406 Q155.5806,205.9375 154.94,206.0781 Q154.2994,206.2344 153.5963,206.2344 Q151.0963,206.2344 149.7681,204.5938 Q148.4556,202.9375 148.4556,199.8125 Q148.4556,196.6875 149.7681,195.0313 Q151.0963,193.375 153.5963,193.375 Q154.2994,193.375 154.94,193.5313 Q155.5963,193.6875 156.1588,193.9844 L156.1588,196.7031 Q155.5338,196.125 154.94,195.8594 Q154.3463,195.5781 153.7213,195.5781 Q152.3775,195.5781 151.69,196.6563 Q151.0025,197.7188 151.0025,199.8125 Q151.0025,201.9063 151.69,202.9844 Q152.3775,204.0469 153.7213,204.0469 Q154.3463,204.0469 154.94,203.7813 Q155.5338,203.5 156.1588,202.9219 L156.1588,205.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="173.69" y="204.1543">Atom</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="95.94" x2="250.94" y1="216" y2="216"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="102.94" y="224"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105" x="114.94" y="230.2104">atomicNumber: int</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="102.94" y="236.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="114.94" y="243.0151">electrons: int</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="95.94" x2="250.94" y1="249.6094" y2="249.6094"/><ellipse cx="105.94" cy="260.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="131" x="114.94" y="263.8198">getAtomicNumber(): int</text><ellipse cx="105.94" cy="273.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="114.94" y="276.6245">getElectronCount(): int</text><!--MD5=[8c8ccd6b6c8b0d77313c56133120c21b]
+link Particle to Atom--><path d="M110.39,71.92 C75.05,83.01 33.86,102.72 12.44,137 C-9.46,172.04 30.12,195.84 75.5,210.91 " fill="none" id="Particle-&gt;Atom" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="77.68,204.25,94.8,216.75,73.63,217.65,77.68,204.25" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="74" x="13.44" y="150.0669">Constituent</text><!--MD5=[8c8ccd6b6c8b0d77313c56133120c21b]
+link Particle to Atom--><path d="M140.5,107.05 C135.52,116.61 131.15,126.83 128.44,137 C125.39,148.45 126.75,160.21 130.49,171.39 " fill="none" id="Particle-&gt;Atom-1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="135.61,183.73,137.0048,176.6551,131.0105,172.6465,129.6158,179.7214,135.61,183.73" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="129.44" y="150.0669">Orbital</text><!--MD5=[8c8ccd6b6c8b0d77313c56133120c21b]
+link Particle to Atom--><path d="M175.58,107.07 C175.94,116.97 176.25,127.32 176.44,137 C176.65,147.97 176.55,159.64 176.29,170.92 " fill="none" id="Particle-&gt;Atom-2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="175.91,183.92,180.0799,178.0368,176.2531,171.9249,172.0832,177.8081,175.91,183.92" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="51" x="177.44" y="150.0669">Nucleus</text><!--MD5=[8c8ccd6b6c8b0d77313c56133120c21b]
+link Particle to Atom--><path d="M221.38,107.28 C227.96,116.51 233.72,126.56 237.44,137 C242.67,151.7 238.74,166.32 230.76,179.55 " fill="none" id="Particle-&gt;Atom-3" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="227.9,183.98,236.1445,178.5922,230.6139,179.7806,229.4255,174.25,227.9,183.98" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="240.44" y="150.0669">Interaction</text><!--MD5=[9c9d7e04e0098b75513fdcd621d2ecb2]
+@startuml
+class Particle {
+  - mass: float
+  - charge: float
+  + getMass(): float
+  + getCharge(): float
+}
+
+class Atom {
+  - atomicNumber: int
+  - electrons: int
+  + getAtomicNumber(): int
+  + getElectronCount(): int
+}
+
+Particle - -|> Atom : Constituent
+
+Particle - -* Atom : Orbital
+
+Particle - -o Atom : Nucleus
+
+Particle ..> Atom : Interaction
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 11:22:07 CET 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.20.1+1-post-Ubuntu-0ubuntu122.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

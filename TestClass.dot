@@ -1,0 +1,5 @@
+digraph "TestClass" {
+rankdir=BT
+charset="utf-8"
+"main.TestClass" [color="aliceblue", fontcolor="black", label=<{main.TestClass|<br ALIGN="LEFT"/>|test_method(a: str, b: int, c: float): int<br ALIGN="LEFT"/>}>, shape="record", style="filled"];
+}

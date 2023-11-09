@@ -62,7 +62,7 @@ html_static_path = ['_static']
 #plantuml = 'path/to/plantuml.jar'
 
 # Include the PlantUML source file(s)
-plantuml_output_format = 'png'  # or 'svg'
+plantuml_output_format = 'svg_img'  # or 'png', 'svg'
 plantuml_output_dir = 'images'
 
 # Enable the PlantUML extension

@@ -36,6 +36,24 @@ This image shows the calls of each method and displays also the respective class
 
 The image:
 
-.. image:: ../docs/_images/code2flow.png
+.. image:: ../docs/_images/code2flow.svg
+   :width: 600
+
+Automatic class and package diagrams image
+------------------------------------------
+
+The following image shows the class diagrams created by pyreverse automatically.
+
+.. attention::
+    The code need to be located in one folder. However, sub folder structures are allowed.
+
+Class diagrams:
+
+.. image:: ../docs/_images/classes_project.svg
+   :width: 600
+
+Package diagrams:
+
+.. image:: ../docs/_images/packages_project.svg
    :width: 600
 

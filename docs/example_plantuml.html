@@ -49,7 +49,13 @@
 <li class="toctree-l1"><a class="reference internal" href="example_graphviz.html">Sample graphviz chapter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_images.html">Sample chapter for images</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_latex.html">Sample math chapter</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sample plantUML chapter</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sample plantUML chapter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sequence-diagram">Sequence diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#class-diagrams">Class diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#class-diagrams-dependencies">Class diagrams dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-class-diagrams">Simulation Class Diagrams</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="sample-chapter.html">Sample chapter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="summary.html">Summary</a></li>
 </ul>
@@ -80,10 +86,230 @@
              
   <section id="sample-plantuml-chapter">
 <h1>Sample plantUML chapter<a class="headerlink" href="#sample-plantuml-chapter" title="Permalink to this heading"></a></h1>
+<section id="sequence-diagram">
+<h2>Sequence diagram<a class="headerlink" href="#sequence-diagram" title="Permalink to this heading"></a></h2>
 <p class="plantuml">
-<img src="_images/plantuml-fc4101f7f9dbce27bfcc9f0fcf7a3e021073b090.png" alt="Alice -&gt; Bob: Hi!
-Alice &lt;- Bob: How are you?"/>
-</p>
+<img src="_images/plantuml-fc4101f7f9dbce27bfcc9f0fcf7a3e021073b090.svg" alt="Alice -&gt; Bob: Hi!
+Alice &lt;- Bob: How are you?"/></p>
+</section>
+<section id="class-diagrams">
+<h2>Class diagrams<a class="headerlink" href="#class-diagrams" title="Permalink to this heading"></a></h2>
+<p class="plantuml">
+<img src="_images/plantuml-01ce3b56278d6a943910424e63155c7dcaa84464.svg" alt="class Class1 {
+  - privateVar: int
+  # protectedVar: str
+  + publicVar: bool
+
+  + getPrivateVar(): int
+  + setPrivateVar(value: int): void
+  + getProtectedVar(): str
+  + setProtectedVar(value: str): void
+  + getPublicVar(): bool
+  + setPublicVar(value: bool): void
+
+  + doSomething(): void
+  + calculateValue(x: int, y: int): int
+}
+
+class Class2 {
+  - privateVar2: str
+  # protectedVar2: int
+  + publicVar2: float
+
+  + getPrivateVar2(): str
+  + setPrivateVar2(value: str): void
+  + getProtectedVar2(): int
+  + setProtectedVar2(value: int): void
+  + getPublicVar2(): float
+  + setPublicVar2(value: float): void
+
+  + doSomethingElse(): void
+  + processData(input: str): str
+}
+
+class Class3 {
+  - privateVar: int
+  # protectedVar: str
+  + publicVar: bool
+
+  + getPrivateVar(): int
+  + setPrivateVar(value: int): void
+  + getProtectedVar(): str
+  + setProtectedVar(value: str): void
+  + getPublicVar(): bool
+  + setPublicVar(value: bool): void
+
+  + doSomething(): void
+  + calculateValue(x: int, y: int): int
+}
+
+class Class4 {
+  - privateVar2: str
+  # protectedVar2: int
+  + publicVar2: float
+
+  + getPrivateVar2(): str
+  + setPrivateVar2(value: str): void
+  + getProtectedVar2(): int
+  + setProtectedVar2(value: int): void
+  + getPublicVar2(): float
+  + setPublicVar2(value: float): void
+
+  + doSomethingElse(): void
+  + processData(input: str): str
+}
+
+class Class5 {
+  - privateVar: int
+  # protectedVar: str
+  + publicVar: bool
+
+  + getPrivateVar(): int
+  + setPrivateVar(value: int): void
+  + getProtectedVar(): str
+  + setProtectedVar(value: str): void
+  + getPublicVar(): bool
+  + setPublicVar(value: bool): void
+
+  + doSomething(): void
+  + calculateValue(x: int, y: int): int
+}
+
+class Class6 {
+  - privateVar2: str
+  # protectedVar2: int
+  + publicVar2: float
+
+  + getPrivateVar2(): str
+  + setPrivateVar2(value: str): void
+  + getProtectedVar2(): int
+  + setProtectedVar2(value: int): void
+  + getPublicVar2(): float
+  + setPublicVar2(value: float): void
+
+  + doSomethingElse(): void
+  + processData(input: str): str
+}"/></p>
+</section>
+<section id="class-diagrams-dependencies">
+<h2>Class diagrams dependencies<a class="headerlink" href="#class-diagrams-dependencies" title="Permalink to this heading"></a></h2>
+<p class="plantuml">
+<img src="_images/plantuml-0d8bf416ce44ebf15d132e4576b9f4818cd3dc82.svg" alt="class Particle {
+  - mass: float
+  - charge: float
+  + getMass(): float
+  + getCharge(): float
+}
+
+class Atom {
+  - atomicNumber: int
+  - electrons: int
+  + getAtomicNumber(): int
+  + getElectronCount(): int
+}
+
+Particle --|&gt; Atom : Constituent
+
+Particle --* Atom : Orbital
+
+Particle --o Atom : Nucleus
+
+Particle ..&gt; Atom : Interaction"/></p>
+</section>
+<section id="simulation-class-diagrams">
+<h2>Simulation Class Diagrams<a class="headerlink" href="#simulation-class-diagrams" title="Permalink to this heading"></a></h2>
+<p class="plantuml">
+<img src="_images/plantuml-de1b4143295ae8c7e791dc9c558435cfc2a29e51.svg" alt="class Configurator {
+**note:** loading and handling of config information.
+**note:** print selected configuration formatted
+to the console
+}
+
+
+class Printer {
++ reset_count()
++ print(state : str, message : str)
+}
+note left of Printer::print
+    * print to console in standardised format.
+    Example: [ 1 ][ OK ][ &quot;message&quot; ]
+
+    * maybe also provide an option to log the
+    current session in txt/log file. Allows,
+    analysing/comparing runs late on.
+end note
+
+
+class Loader {
++ FID: dict
+
++ load_jMRUI(path : str)
+}
+note left of Loader::FID
+    Example:
+    FID[&quot;signal&quot;] -&gt; np.array
+    FID[&quot;parameters&quot;][&quot;LarmorFreq&quot;] -&gt; int
+end note
+note left of Loader : Instance of this class can be used to \n load lipids or metabolites.
+
+
+
+class Mask {
++ FOV : float
++ slice_thickness : float
+
++ load_nii(path: str)
++ interpolation(voxel_size : int)
+}
+note left of Mask : Instance can load and handle: B0 Map, \n Metabolite Mask, Fat Mask. For interpolation \n possible PyTorch (form 1,1,x,y,z) or \n scipy.ndimage with (x,y,z).
+
+class MRSIBuilder {
++ FID_lipids : dict
++ FID_metabolites : dict
+
+- load(target : str, source : str)
+- build_mrsi_lipids()
+- build_mrsi_metabolites()
++ build_mrsi()
+}
+note right of MRSIBuilder::FID_metabolites
+    Examples:
+    FID_metabolites[&quot;signal&quot;] : np.array
+    FID_metabolites[&quot;time&quot;] : np.array
+end note
+note right of MRSIBuilder::load
+    Either load data from path or from an
+    simulation (class SpectralSimulator). Output
+    format from both sources should be identical.
+end note
+note right of MRSIBuilder::build_mrsi()
+    Also brings FID to spectral space.
+end note
+
+
+class SpectralSimulator {
++ metabolites()
++ lipids()
++ water()
++ macromolecules()
++ suppression(target : str)
++ get_spectrum(spectra : list) -&gt; np.array
++ line broadening(spectrum : np.array)
+}
+note right of SpectralSimulator : Depending on the code style it also \n possible to create just the function simulate() \n with arguments &quot;metabolites&quot;, &quot;water&quot;, ...
+note right of SpectralSimulator::suppression
+    Arguments: &quot;Water&quot;, &quot;Lipids&quot;
+end note
+note right of SpectralSimulator::get_spectrum
+    To get a sum of the desired spectra.
+    For example: get_spectrum([&quot;lipids&quot;, &quot;water&quot;])
+end note
+
+ Loader ..&gt; Configurator : maybe using paths
+ Loader ..&gt; Mask : maybe using paths
+ MRSIBuilder --o Loader : load FID (metabolites, lipids)
+ MRSIBuilder --o SpectralSimulator : load simulated spectra"/></p>
+</section>
 </section>
 
 

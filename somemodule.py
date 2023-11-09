@@ -8,6 +8,7 @@ class SomeClass:
         """
         The constructor. Not very special...
         """
+        A = 1
         pass
 
     def __call__(self, *args, **kwargs):
